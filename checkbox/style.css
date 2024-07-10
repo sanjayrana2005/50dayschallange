@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+    --color:#5128c6
+}
+
+.checkbox {
+    accent-color: var(--color);
+    border-radius: 8px;
+    position: absolute;
+}
+
+.checkbox-container label {
+    background-color: white;
+    border: 1px solid #c2c2c2;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkbox-container label:hover {
+    border-color: var(--color);
+}
+
+.checkbox:checked+label {
+    border-color: var(--color);
+    background-color: var(--color);
+}
+
+.checkbox:focus+label, label:active {
+    outline: 2px solid #cf8fff;
+    border-color: var(--color);
+}
