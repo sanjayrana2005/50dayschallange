@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip-container {
+    width: 518px;
+    height: 237px;
+    border: 1px solid white;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+}
+
+.tooltip-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tooltip {
+    color: white;
+    position: absolute;
+    top: -26px;
+    border-radius: 24px;
+    padding: 3px 10px;
+    font-size: 10px;
+    display: none;
+}
+
+.tooltip span {
+    position: relative;
+    z-index: 1;
+}
+
+.tooltip::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 9px;
+    left: 39%;
+}
+
+.mongoDB .tooltip {
+    background-color: #47A248;
+}
+
+.mongoDB .tooltip::after {
+    background-color: #47A248;
+}
+
+.expressjs .tooltip {
+    background-color: #ffffff;
+    color: black;
+}
+
+.expressjs .tooltip::after {
+    background-color: #ffffff;
+}
+
+.reactjs .tooltip {
+    background-color: #61dafb;
+    color: black;
+}
+
+.reactjs .tooltip::after {
+    background-color: #61dafb;
+}
+
+.nodejs .tooltip {
+    background-color: #95ee37;
+    color: black;
+}
+
+.nodejs .tooltip::after {
+    background-color: #95ee37;
+}
+
+.tooltip-icon:hover .tooltip {
+    display: block;
+}
