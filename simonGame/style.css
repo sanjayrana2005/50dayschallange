@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+    height: 100vh;
+}
+
+.btns {
+    width: 9rem;
+    height: 9rem;
+    border: 5px solid black;
+    border-radius: 20%;
+    margin: 0.5rem;
+    cursor: pointer; 
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.red {
+    background-color: #ff0000c4;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: #00bbad;
+}
+
+.purple {
+    background-color: #955295d1;
+}
+
+.flash {
+    background-color: white;
+}
+
+.userFlash{
+    background-color: green;
+}

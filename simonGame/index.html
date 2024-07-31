@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <h1>Simon Says Game</h1>
+    <h2>Press button to start the game</h2>
+
+    <div class="btn-container">
+
+        <div class="line-one">
+            <div class="btns red" type="button" id="red"></div>
+            <div class="btns yellow" type="button" id="yellow"></div>
+        </div>
+
+        <div class="line-two">
+            <div class="btns green" type="button" id="green"></div>
+            <div class="btns purple" type="button" id="purple"></div>
+        </div>
+    </div>
+
+    <button class="startBtn">Click to start</button>
 
 
 
@@ -20,10 +39,8 @@
 
 
 
-
-
-    
 
     <script src="./script.js"></script>
 </body>
+
 </html>
