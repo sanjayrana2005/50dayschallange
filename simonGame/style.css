@@ -26,6 +26,12 @@ button {
     cursor: pointer;
     margin-top: 10px;
 }
+
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
 .red {
     background-color: #ff0000c4;
 }
