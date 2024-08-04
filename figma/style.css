@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",sans-serif;
+}
+
+
+#bg-image {
+    background-image: url("./assests/designer_1.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    position: relative;
+    top: 0;
+    height: 150vh;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+
+.scroll {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: #939EA4;
+}
+
+#nav-bar a+a {
+    margin-left: 2rem;
+
+}
+
+#header>h1 {
+    color: #37447E;
+}
+
+#header>button {
+    background-color: #111B47;
+    color: #fff;
+    padding: 0.2rem 1.5rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#content-1 {
+    width: 30rem;
+    margin-left: 10%;
+    padding: 0 1rem;
+    position: relative;
+    top: 20rem;
+}
+
+#content-1>h1 {
+    font-size: 2.5rem;
+}
+
+#content-1>p {
+    line-height: 1.5;
+}
+
+#content-1>.btn {
+    padding: 0.4rem 3rem;
+    border-radius: 3px;
+    border: 2px solid #111B47;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: #111B47;
+    color: white;
+}
+
+.btn-2 {
+    background: transparent;
+    color: #111B47;
+}
+
+
+#content-2-container {
+    display: flex;
+    gap: 10rem;
+    padding: 8rem;
+    overflow-x: hidden;
+}
+
+#content-2 {
+    width: 32rem;
+    position: relative;
+    left: 3%;
+    padding-top: 5rem;
+
+}
+
+#content-2-box {
+    width: 35rem;
+    position: relative;
+    margin-top: 3rem;
+    display: flex;
+    gap: 10px;
+}
+
+.box>h2 {
+    font-size: 1.5rem;
+}
+
+.box>p {
+    font-size: 1rem;
+}
+
+#content-3-container {
+    padding: 0 10rem 5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content-3-box1 {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 10rem;
+}
+
+.content-3-box1-1 {
+    width: 30rem;
+}
+
+.content-3-box2 {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    margin-bottom: 10rem;
+}
+
+.content-3-box3 {
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+}
+
+#content-4-container {
+    background-image: url(./assests/Rectangle.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30rem;
+}
+
+#content-4-container-box {
+    text-align: center;
+    width: 33rem;
+}
+
+#dollar>h1 {
+    margin-bottom: 0;
+}
+
+#dollar>p {
+    margin-top: 5px;
+}
+
+#purchase>p {
+    margin-top: 3rem;
+    margin-bottom: 5px;
+}
+
+#purchase>a {
+    background-color: #111B47;
+    color: #fff;
+    padding: 0.2rem 3rem;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 0.3rem 3rem;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #E7ECFF;
+    padding: 2rem 7rem;
+    margin-top: -10rem;
+}
+
+.footer-container-box-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container-box-1>p {
+    color: #939EA4;
+}
+
+.footer-container-box-1>h1 {
+    color: #37447E;
+}
+
+.footer-container-box-1>button {
+    background-color: #111B47;
+    border: none;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#footer-container>hr {
+    border: 1px solid #CDD1D4;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#links a {
+    text-decoration: none;
+    color: #939EA4;
+}
+
+#links a+a {
+    margin-left: 3rem;
+}
+
+#logos a+a {
+    margin-left: 2rem;
+}
