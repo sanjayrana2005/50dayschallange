@@ -8,23 +8,19 @@ html,
 body {
     width: 100%;
     height: 100%;
-    background-color: rgba(15, 166, 166, 0.205);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #main {
-    color: white;
     text-align: center;
-    background-color: black;
-    height: 500px;
-    width: 50%;
-    padding: 5px;
+    height: 100%;
+    width: 58%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px;
     grid-template-areas: "div1 div1 div2 div2"
         "div3 div4 div4 div5"
         "div6 div7 div7 div5";
@@ -32,41 +28,263 @@ body {
 }
 
 #div1 {
-    background-color: aquamarine;
+    color: black;
+    background-color: white;
     grid-area: div1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#textdiv1 {
+    margin-top: 45px;
+}
+
+#textdiv1 h4 {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.304);
+    text-align: start;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#ol1 {
+    color: rgba(0, 0, 0, 0.747);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    text-align: start;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#ol2 {
+    color: rgba(0, 0, 0, 0.377);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 8px;
+    list-style: none;
+    text-align: start;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#ol2 li{
+    font-size: 12px;
+}
+
+#imagediv1>img {
+    height: 220px;
+    width: 140px;
+    margin-top: 25px;
 }
 
 #div2 {
-    background-color: burlywood;
+    background-color: #F7F8F9;
     grid-area: div2;
 }
 
+#div2 div{
+    width: 100%;
+    height: 100%;
+    padding: 40px 55px;
+}
+
+#div2 h1{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.391);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#div2 p{
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 8px;
+}
+
 #div3 {
-    background-color: blue;
+    background-color: #EE5637;
+    padding: 30px 40px;
     grid-area: div3;
 
 }
+#div3 img{ 
+    width: 160px;
+}
+#div3 p{
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#div3  h4{
+    color: yellow;
+    font-size: 12px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 #div4 {
-    background-color: blueviolet;
+    background-color: white;
     grid-area: div4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#box1div4{
+    padding: 0 35px;
+    padding-top: 35px;
+}
+#box1div4 h1{
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.407);
+}
 
+#box1div4 p{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.83);
+    margin-top: 5px;
+    text-align: start;
+    margin-bottom: 15px;
+}
+
+#box1div4 img{
+    width: 100px;
+}
+
+#box2div4{
+    padding: 50px 0;
+}
+#box2div4 p{
+    text-align: start;
+    font-size: 15px;
+}
+#box2div4 h1{
+    font-size: 12px;
+    margin-top: 15px;
+    color: rgb(117, 117, 229);
+    text-align: start;
+    text-transform: uppercase;
 }
 
 #div5 {
-    background-color: brown;
+    background-color: #8F76BC;
     grid-area: div5;
-
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 40px;
 }
 
-#div6 {
-    background-color: cadetblue;
-    grid-area: div6;
+#box1div5{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #8166AF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#box1div5 h1{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.145);
+    display: inline-block;
+    padding: 0 2px;
+    border-radius: 2px;
+}
+#box1div5 img{
+    width: 150px;
+    /* display: block; */
+}
+#box1div5 h2{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 2px;
+    border-radius: 2px;
+    
+}
 
+#box2div5{
+    color: white;
+    padding: 10px 25px;
+}
+
+#box2div5 h1{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5px;
+}
+#box2div5 p{
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+#box2div5 button{
+    background-color: #F9C847;
+    padding: 20px 25px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+#div6 {
+    background-color: #F7F8F9;
+    grid-area: div6;
+    padding-top: 10px;
+}
+#div6 h1{
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 3px;
+}
+#div6 h2{
+    font-size: 15px;
+    text-transform: uppercase;
+    color:rgb(89, 89, 234);
+    margin-top: 18px;
 }
 
 #div7 {
-    background-color: chartreuse;
+    background-color: #93B6B7;
     grid-area: div7;
+    position: relative;
+    padding:0 25px ;
+}
 
+#div7 h1{
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    font-size: 10px;
+    padding: 1px 3px;
+}
+
+#div7 p{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif    ;
+    padding: 0 80px;
+    margin-top: 50px;
+
+}
+
+#div7 img{
+    width: 100%;
 }
